@@ -1,37 +1,14 @@
-nav{
-    display: flex;
-    background-color: white;
-    font-family: monospace ;
-    font-weight: bolder;
-  
-  
-  
-  }
-
-ul{
-    list-style-type: none ;
-    padding:0 ;
-    margin: 0;
-    display: block;
-    float: left;
-}
-li a {
-    list-style: none;
-    display: unset;
-    color:black;
-    text-align:left;
-    padding: 100px 100px;
-    text-decoration: none
-}
-
-li a :hover {
-    color : red;
-}
-li a .active {
-    /*  */
-    background-color: #111;
-    width: fit-content;
-}
-.picture{
-    margin-inline-start: 500px;
+.timeline .timeline-item {
+    position: relative;
+    padding-left: 35px;
+    padding-bottom: 50px;
+} 
+timeline .circle-dot {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    height: 15px;
+    width: 15px;
+    left: 0px;
+    border-radius: 50%;
 }
