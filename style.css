@@ -2,7 +2,8 @@ body {
   font-family: "Lato", sans-serif;
  background-image: url("images/Home/bg\ image.jpeg");
  background-size: cover;
- font-family: 'Roboto Slab', serif;  
+ font-family: 'Roboto Slab', serif; 
+ margin-top:5rem;
 }
 
 
@@ -52,10 +53,34 @@ body {
 /* end nav bar */
 /*
   /* ===ANIMATION HOME SECTION */
-   
+  .typewriter h1 {
+    color:#2D6A4F;
+    font-family: monospace;
+    overflow: hidden; 
+    border-right: .15em solid black; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+ 
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black}
+  }
   /* ===saaas== */
   
   /* SOCIAL MEDIA BTN */
+  /* =========================== */
   .footer-distributed {
     background-color: #2D6A4F;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -255,19 +280,17 @@ body {
 
 /* ================ The Timeline ================ */
 
- 
-
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #45505b;
+  color: #2D6A4F;
 }
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #0563bb;
+  border-left: 2px solid #2D6A4F;
   position: relative;
 }
 .resume .resume-item h4 {
@@ -276,7 +299,7 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #0563bb;
+  color: #2D6A4F;
   margin-bottom: 10px;
 }
 .resume .resume-item h5 {
@@ -324,19 +347,19 @@ body {
 
 .info p {
   text-align:center;
-  color: #999;
+  color:black;
   text-transform:none;
   font-weight:600;
-  font-size:15px;
+  font-size:20px;
   margin-top:2px
 }
 
 .info i {
-  color:#F6AA93;
+  color:#2D6A4F;
 }
 form h1 {
   font-size: 18px;
-  background: #F6AA93 none repeat scroll 0% 0%;
+  background: #2D6A4F 0% 0%;
   color: rgb(255, 255, 255);
   padding: 22px 25px;
   border-radius: 5px 5px 0px 0px;
@@ -350,31 +373,31 @@ form {
   max-width:700px;
   width:100%;
   margin: 5% auto;
-  background-color: #FFFFFF;
+  background-color:white;
   overflow: hidden;
 }
 
 p span {
-  color: #F00;
+  color: #2D6A4F;
 }
 
 p {
   margin: 0px;
   font-weight: 500;
   line-height: 2;
-  color:#333;
+  color:black;
 }
 
 h1 {
   text-align:center; 
-  color: #666;
+  color: black;
   text-shadow: 1px 1px 0px #FFF;
   margin:50px 0px 0px 0px
 }
 
 input {
   border-radius: 0px 5px 5px 0px;
-  border: 1px solid #eee;
+  border: 1px solid #2D6A4F;
   margin-bottom: 15px;
   width: 75%;
   height: 40px;
@@ -421,7 +444,7 @@ i {
 }
 
 .bouton-contact{
-  background-color: #81BDA4;
+  background-color: #2D6A4F;
   color: #FFF;
   text-align: center;
   width: 100%;
@@ -478,4 +501,155 @@ i {
 /* ============================end of contact form====== */
 
 
-/* ==============END OF */
+
+
+/* ======================================TESTIMONIALS========================================*/ */
+
+
+/* ============================= */
+/* =======================PROJECTS=========== */
+
+
+* {
+  box-sizing: border-box;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+@media (max-width: 550px) {
+  .cards {
+    flex-direction: column;
+  }
+}
+
+.card {
+  position: relative;
+  width: 31.33333%;
+  margin: 1%;
+  background: whiteSmoke;
+  box-shadow: 1px 1px 5px #999;
+}
+@media (max-width: 815px) {
+  .card {
+    width: 48%;
+  }
+}
+@media (max-width: 550px) {
+  .card {
+    width: 100%;
+  }
+}
+.card__inner {
+  position: relative;
+  background: url("images/projects/") no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.card__inner h2 {
+  background-image: url("images/projects/mediaquery.png ");
+  background-size: cover;
+  color: white;
+  margin: 0;
+  padding: 30% 0;
+  text-shadow: 1px 1px 3px #000;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.card__inner h2 small {
+  font-style: italic;
+  display: inherit;
+}
+.card__buttons {
+  position: absolute;
+  width: 100%;
+  transform: translateY(0);
+  transition: transform 0.5s ease;
+}
+.card__buttons a {
+  position: relative;
+  float: left;
+  width: 50%;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.card__buttons a:first-child {
+  background: yellowgreen;
+  border-right: 1px solid #ccc;
+}
+.card__buttons a:last-child {
+  background:#2D6A4F;
+}
+.card__buttons a:hover {
+  color: #ffde00;
+  background: #000;
+}
+.card:hover .card__buttons {
+  transform: translateY(-38px);
+}
+.card__tagline {
+  font-size: 1rem;
+  font-weight: 100;
+}
+.card__icons {
+  margin: 0 0 50px;
+  padding: 0;
+  list-style: none;
+}
+.card__icons li {
+  display: inline-block;
+  padding: 0 10px 10px;
+}
+.card__icons .fa {
+  font-size: 0.8rem;
+}
+.card__icons .fa:before {
+  font-size: 1.2rem;
+  display: block;
+  padding-bottom: 5px;
+}
+.card p {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.card__inner h3 {
+  background-image: url("images/projects/flipcards.png");
+  background-size: cover;
+  
+  color: white;
+  margin: 0;
+  padding: 30% 0;
+  text-shadow: 1px 1px 3px #000;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.card__inner h3 small {
+  font-style: italic;
+  display: inherit;
+}
+
+.card__inner h4 {
+  background-image: url("images/projects/onlinestore.png");
+  color: white;
+  margin: 0;
+  padding: 30% 0;
+  text-shadow: 1px 1px 3px #000;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.card__inner h4 small {
+  font-style: italic;
+  display: inherit;
+}
+/* =========================================== */

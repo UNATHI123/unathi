@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>HOME</title>
+    <title>CONTACT</title>
     <link rel="icon" type="image/x-icon" href="images/UNATHI-logos.jpeg">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='stylesheets/bootstrap.min.css'>
@@ -28,22 +28,139 @@
     
     <div id="main">
      
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;Open Nav</span>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     </div>
  <!-- ====end of navbar=== -->
+
+ <div class="typewriter">
+  <h1>Contact Page</h1>
+</div>
+
+<!-- =============contact form====== -->
+
+  
+ <div class="info">
+   <p> Made with <i class="fa fa-heart"></i>UNATHI QOLWENI </p>
+   <p><i class="bi bi-telephone-inbound"></i> 0780048135 <br><i class="bi bi-mailbox"></i>uqolweni@gmail.com</i></p>
+  
+</div>
+
+<form>
+  <form action="https://formspree.io/f/mqkwrjab" method="POST">
+    <h1>Should you have any Queries, please do not hesitate to contact me :</h1>
+    
+  <div class="contentform">
+    <div id="sendmessage"> Your message has been sent successfully. Thank you. </div>
+
+
+    <div class="leftcontact">
+          <div class="form-group">
+            <p>Surname<span>*</span></p>
+            <span class="icon-case"><i class="fa fa-male"></i></span>
+              <input type="text" name="Surname" id="Surname" data-rule="required" data-msg=/>
+              <div class="validation"></div>
+     </div> 
+
+          <div class="form-group">
+          <p>Name <span>*</span></p>
+          <span class="icon-case"><i class="fa fa-user"></i></span>
+      <input type="text" name="name" id="name" data-rule="required" data-msg=/>
+              <div class="validation"></div>
+    </div>
+
+    <div class="form-group">
+    <p>E-mail <span>*</span></p>	
+    <span class="icon-case"><i class="fa fa-envelope-o"></i></span>
+              <input type="email" name="email" id="email" data-rule="email" data-msg=""/>
+              <div class="validation"></div>
+    </div>	
+
+    <div class="form-group">
+    <p>Company <span>*</span></p>
+    <span class="icon-case"><i class="fa fa-home"></i></span>
+      <input type="text" name="society" id="society" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Société' doit être renseigné."/>
+              <div class="validation"></div>
+    </div>
+
+    <div class="form-group">
+    <p>Company Address <span>*</span></p>
+    <span class="icon-case"><i class="fa fa-location-arrow"></i></span>
+      <input type="text" name="adress" id="adress" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Adresse' doit être renseigné."/>
+              <div class="validation"></div>
+    </div>
+
+    <div class="form-group">
+    <p>Postcode <span>*</span></p>
+    <span class="icon-case"><i class="fa fa-map-marker"></i></span>
+      <input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
+              <div class="validation"></div>
+    </div>	
+
+
+
+</div>
+
+<div class="rightcontact">	
+
+    <div class="form-group">
+    <p>City <span>*</span></p>
+    <span class="icon-case"><i class="fa fa-building-o"></i></span>
+      <input type="text" name="city" id="city" data-rule="required" data-msg=""/>
+              <div class="validation"></div>
+    </div>	
+
+    <div class="form-group">
+    <p>Phone number <span>*</span></p>	
+    <span class="icon-case"><i class="fa fa-phone"></i></span>
+      <input type="text" name="phone" id="phone" data-rule="maxlen:10" data-msg=""/>
+              <div class="validation"></div>
+    </div>
+
+    <div class="form-group">
+    <p>Function <span>*</span></p>
+    <span class="icon-case"><i class="fa fa-info"></i></span>
+              <input type="text" name="function" id="function" data-rule="required" data-msg=""/>
+              <div class="validation"></div>
+    </div>
+
+    <div class="form-group">
+    <p>Subject <span>*</span></p>	
+    <span class="icon-case"><i class="fa fa-comment-o"></i></span>
+              <input type="text" name="subject" id="subject" data-rule="required" data-msg=""/>
+              <div class="validation"></div>
+    </div>
+  
+    <div class="form-group">
+    <p>Message <span>*</span></p>
+    <span class="icon-case"><i class="fa fa-comments-o"></i></span>
+              <textarea name="message" rows="14" data-rule="required" data-msg=""></textarea>
+              <div class="validation"></div>
+    </div>	
+</div>
+</div>
+<button type="submit" class="bouton-contact">Send</button>
+
+</form>	
+
+
+
+<!-- ===============contact form -->
+
+
+
   <!-- FOOTER -->
   <footer class="footer-distributed">
 
     <div class="footer-left">
 
-      <IMG SRC="images/Unathi1-1.JPG" ALT="Unathi1-1" WIDTH=150 HEIGHT=100>
+      <IMG SRC="images/about/land.jpg" ALT="Unathi1-1" WIDTH=150 HEIGHT=100>
 
       <p class="footer-links">
-        <a href="home.html">Home</a> ·
-        <a href="about.html">About</a> ·
-        <a href="Resume.html">Resume</a> ·
-        <a href="projects.html">Projects</a> ·
-        <a href="contact.html">Contact</a>
+        <a href="home.html">Home</a> .
+        <a href="about.html">About</a> .
+        <a href="Resume.html">Resume</a> .
+        <a href="projects.html">Projects</a> .
+        <a href="contact.html">Contact</a>.
       </p>
 
       <p class="footer-company-name">Unathi&copy; 2021</p>
@@ -88,109 +205,10 @@
 
 
   <!--  -->
-  
-  <h1>Elegant Contact Form.</h1>
-  <div class="info"><a href="https://www.grandvincent-marion.fr" target="_blank"><p> Made with <i class="fa fa-heart"></i> by Marion Grandvincent </p></a></div>
- 
- <form>
-       <h1>Should you have any questions, please do not hesitate to contact me :</h1>
-       
-   <div class="contentform">
-       <div id="sendmessage"> Your message has been sent successfully. Thank you. </div>
-
-
-       <div class="leftcontact">
-                 <div class="form-group">
-                   <p>Surname<span>*</span></p>
-                   <span class="icon-case"><i class="fa fa-male"></i></span>
-                       <input type="text" name="nom" id="nom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Nom' doit être renseigné."/>
-               <div class="validation"></div>
-      </div> 
-
-           <div class="form-group">
-           <p>Name <span>*</span></p>
-           <span class="icon-case"><i class="fa fa-user"></i></span>
-               <input type="text" name="prenom" id="prenom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Prénom' doit être renseigné."/>
-               <div class="validation"></div>
-           </div>
-
-           <div class="form-group">
-           <p>E-mail <span>*</span></p>	
-           <span class="icon-case"><i class="fa fa-envelope-o"></i></span>
-               <input type="email" name="email" id="email" data-rule="email" data-msg="Vérifiez votre saisie sur les champs : Le champ 'E-mail' est obligatoire."/>
-               <div class="validation"></div>
-           </div>	
-
-           <div class="form-group">
-           <p>Company <span>*</span></p>
-           <span class="icon-case"><i class="fa fa-home"></i></span>
-               <input type="text" name="society" id="society" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Société' doit être renseigné."/>
-               <div class="validation"></div>
-           </div>
-
-           <div class="form-group">
-           <p>Company Address <span>*</span></p>
-           <span class="icon-case"><i class="fa fa-location-arrow"></i></span>
-               <input type="text" name="adresse" id="adresse" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Adresse' doit être renseigné."/>
-               <div class="validation"></div>
-           </div>
-
-           <div class="form-group">
-           <p>Postcode <span>*</span></p>
-           <span class="icon-case"><i class="fa fa-map-marker"></i></span>
-               <input type="text" name="postal" id="postal" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Code postal' doit être renseigné."/>
-               <div class="validation"></div>
-           </div>	
-
-
-
-   </div>
-
-   <div class="rightcontact">	
-
-           <div class="form-group">
-           <p>City <span>*</span></p>
-           <span class="icon-case"><i class="fa fa-building-o"></i></span>
-               <input type="text" name="ville" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
-               <div class="validation"></div>
-           </div>	
-
-           <div class="form-group">
-           <p>Phone number <span>*</span></p>	
-           <span class="icon-case"><i class="fa fa-phone"></i></span>
-               <input type="text" name="phone" id="phone" data-rule="maxlen:10" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres"/>
-               <div class="validation"></div>
-           </div>
-
-           <div class="form-group">
-           <p>Function <span>*</span></p>
-           <span class="icon-case"><i class="fa fa-info"></i></span>
-               <input type="text" name="fonction" id="fonction" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Fonction' doit être renseigné."/>
-               <div class="validation"></div>
-           </div>
-
-           <div class="form-group">
-           <p>Subject <span>*</span></p>	
-           <span class="icon-case"><i class="fa fa-comment-o"></i></span>
-               <input type="text" name="sujet" id="sujet" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Sujet' doit être renseigné."/>
-               <div class="validation"></div>
-           </div>
-       
-           <div class="form-group">
-           <p>Message <span>*</span></p>
-           <span class="icon-case"><i class="fa fa-comments-o"></i></span>
-               <textarea name="message" rows="14" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Message' doit être renseigné."></textarea>
-               <div class="validation"></div>
-           </div>	
-   </div>
-   </div>
-<button type="submit" class="bouton-contact">Send</button>
-   
-</form>	
 
  
-</body>
-</html>
+
+
 
 
 <script src="stylesheets/bootstrap.bundle.min.js"></script> 
